@@ -1,37 +1,37 @@
 var apps = [
   {
-    line1: "DUMB GAME 1",
-    line2: "Stupid",
-    publisher: "Nintendo",
-    icon: "assets/icon.png",
+    line1: "hazycora.com",
+    line2: "",
+    publisher: "Hazel Cora",
+    icon: "icons/hazyico.png",
     link: "https://hazycora.com"
   },
   {
-    line1: "DUMB GAME 2",
-    line2: "Stupid",
-    publisher: "Nintendo",
-    icon: "assets/icon.png",
-    link: "https://hazycora.com"
+    line1: "twitter.com",
+    line2: "",
+    publisher: "Twitter",
+    icon: "icons/twitter.png",
+    link: "https://twitter.com/hazycora"
   },
   {
-    line1: "DUMB GAME 3",
-    line2: "Stupid",
-    publisher: "Nintendo",
-    icon: "assets/icon.png",
-    link: "https://hazycora.com"
+    line1: "youtube.com",
+    line2: "",
+    publisher: "YouTube",
+    icon: "icons/youtube.png",
+    link: "https://youtube.com/"
   },
   {
-    line1: "DUMB GAME 4",
-    line2: "Stupid",
-    publisher: "Nintendo",
-    icon: "assets/icon.png",
-    link: "https://hazycora.com"
+    line1: "wikipedia.org",
+    line2: "",
+    publisher: "Wikipedia",
+    icon: "icons/wikipedia.png",
+    link: "https://www.wikipedia.org/"
   },
   {
-    line1: "DUMB GAME 5",
-    line2: "Stupid",
-    publisher: "Nintendo",
-    icon: "assets/icon.png",
-    link: "https://hazycora.com"
+    line1: "reddit.com",
+    line2: "",
+    publisher: "Reddit",
+    icon: "icons/reddit.png",
+    link: "https://old.reddit.com/"
   }
 ]
