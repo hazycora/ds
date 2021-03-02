@@ -59,21 +59,27 @@ function refresh(scroll) {
     if(amount > 0) {
       for (var index = 0; index < amount; index ++) {
         if (index == perPage-3) {
+          var link = document.createElement("a");
+          link.setAttribute("href", apps[scroll].link);
           var element = document.createElement("div");
           element.setAttribute("class", "gameSelected");
           var img = document.createElement("img");
           img.setAttribute("class", "icon");
           img.setAttribute("src", apps[scroll].icon);
           element.appendChild(img);
-          document.querySelector("#gameRow").appendChild(element);
+          link.appendChild(element);
+          document.querySelector("#gameRow").appendChild(link);
         }else{
+          var link = document.createElement("a");
+          link.setAttribute("href", apps[scroll+(index-(perPage-3))].link);
           var element = document.createElement("div");
           element.setAttribute("class", "game");
           var img = document.createElement("img");
           img.setAttribute("class", "icon");
           img.setAttribute("src", apps[scroll+(index-(perPage-3))].icon);
           element.appendChild(img);
-          document.querySelector("#gameRow").appendChild(element);
+          link.appendChild(element);
+          document.querySelector("#gameRow").appendChild(link);
         }
       }
     }
@@ -113,22 +119,28 @@ function refresh(scroll) {
     if(amount > 0) {
       for (var index = 0; index < amount; index ++) {
         if (index == perPage-3) {
+          var link = document.createElement("a");
+          link.setAttribute("href", apps[scroll+(index-(perPage-3))].link);
           var element = document.createElement("div");
           element.setAttribute("class", "gameSelected");
           var img = document.createElement("img");
           img.setAttribute("class", "icon");
-          img.setAttribute("src", "assets/icon.png");
+          img.setAttribute("src", apps[scroll].icon);
           element.appendChild(img);
-          document.querySelector("#gameRow").appendChild(element);
+          link.appendChild(element);
+          document.querySelector("#gameRow").appendChild(link);
         }
         if (index != perPage-3) {
+          var link = document.createElement("a");
+          link.setAttribute("href", apps[scroll+(index-(perPage-3))].link);
           var element = document.createElement("div");
           element.setAttribute("class", "game");
           var img = document.createElement("img");
           img.setAttribute("class", "icon");
-          img.setAttribute("src", "assets/icon.png");
+          img.setAttribute("src", apps[scroll+(index-(perPage-3))].icon);
           element.appendChild(img);
-          document.querySelector("#gameRow").appendChild(element);
+          link.appendChild(element);
+          document.querySelector("#gameRow").appendChild(link);
         }
       }
     }
