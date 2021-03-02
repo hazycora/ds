@@ -71,7 +71,7 @@ function refresh(scroll) {
           element.setAttribute("class", "game");
           var img = document.createElement("img");
           img.setAttribute("class", "icon");
-          img.setAttribute("src", apps[scroll].icon);
+          img.setAttribute("src", apps[scroll+(index-(perPage-3))].icon);
           element.appendChild(img);
           document.querySelector("#gameRow").appendChild(element);
         }
