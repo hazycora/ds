@@ -4,7 +4,19 @@ function scrollTap(event) {
   var goTo = Math.max(((event.clientX-19-14.5)/5.3), 0)
   goTo = Math.min(goTo, 48)
   //window.location.href = "/?scroll="+Math.floor(goTo)
-  refresh(Math.floor(goTo))
+  goTo = Math.floor(goTo)
+  var curScroll = currentScroll
+  var limiter = 0;
+  for (var i = 1; i < 10; i++) {
+    if (currentScroll!=goTo) {
+      setTimeout(function timer() {
+        curScroll += (goTo-curScroll)/4
+        console.log(curScroll)
+        refresh(Math.round(curScroll))
+        limiter += 1;
+      }, i * 10);
+    }
+  }
 }
 
 function scrollTo(goTo) {
