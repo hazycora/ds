@@ -2,7 +2,7 @@ var apps = [
   {
     line1: "hazycora.com",
     line2: "",
-    publisher: "Hazel Cora",
+    publisher: "HazyCora",
     icon: "icons/hazyico.png",
     link: "https://hazycora.com"
   },
