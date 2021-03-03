@@ -1,0 +1,192 @@
+/* @font-face {
+  font-family: Rodin;
+  src: url('assets/rodin.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Rodin;
+  src: url('assets/rodinBold.otf');
+  font-weight: bold;
+  font-style: bold;
+  font-display: swap;
+} */
+body {
+  font-family: sans-serif;
+  background-color: black;
+  margin: 0px;
+}
+.game {
+  float: left;
+  background-image: url("assets/game.png");
+  width: 50px;
+  height: 60px;
+  margin: 4px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.empty {
+  float: left;
+  background-image: url("assets/empty.png");
+  width: 50px;
+  height: 60px;
+  margin: 4px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.air {
+  float: left;
+  width: 50px;
+  height: 60px;
+  margin: 4px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.bracket {
+  float: left;
+  background-image: url("assets/bracketOpen.png");
+  width: 14px;
+  height: 80px;
+  margin: 4px;
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.bracket[closed] {
+  float: left;
+  background-image: url("assets/bracketClose.png");
+  width: 14px;
+  height: 80px;
+  margin: 4px;
+  margin-right: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.gameSelected {
+  float: left;
+  background-image: url("assets/gameSelected.png");
+  margin: 4px;
+  width: 64px;
+  height: 80px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.emptySelected {
+  float: left;
+  background-image: url("assets/empty.png");
+  margin: 11px;
+  width: 50px;
+  height: 60px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.icon {
+  margin-left: 9px;
+  margin-top: 9px;
+  width: 32px;
+  height: 32px;
+}
+.gameSelected .icon {
+  margin-left: 16px;
+  margin-top: 17px;
+}
+#gameRow {
+  position: absolute;
+  top: 103px;
+  width: 304px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#content {
+  position: absolute;
+  background-image: url("assets/background.png");
+  background-repeat: repeat;
+  outline: 1px solid black;
+  width: 320px;
+  height: 212px;
+}
+#gameDetails {
+  position: absolute;
+  background-image: url("assets/gameDetails.png");
+  top: 6px;
+  left: 6px;
+  width: 308px;
+  height: 66px;
+  z-index: 20;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+#scroll {
+  position: absolute;
+  top: 190px;
+  height: 22px;
+  background-color: rgb(128, 128, 128);
+}
+#bar {
+  margin-top: 1px;
+  display: block;
+  float: left;
+  width: 282px;
+  height: 21px;
+  background-image: url("assets/scrollbar.png");
+}
+#inputBar {
+  position: absolute;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-top: 1px;
+  display: block;
+  float: left;
+  width: 282px;
+  height: 21px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.scrollThing {
+  margin-top: 1px;
+  display: block;
+  float: left;
+  border: 0px solid rgba(0, 0, 0, 0);
+}
+#leftButton {
+  background-image: url("assets/buttonLeft.png");
+  width: 19px;
+  height: 21px;
+}
+#rightButton {
+  background-image: url("assets/buttonRight.png");
+  width: 19px;
+  height: 21px;
+}
+#handle {
+  margin-top: 0px;
+  position: absolute;
+  top: 1px;
+  z-index: 8;
+}
+.dot {
+  display: block;
+  float: left;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 1px;
+}
+.dotMark {
+  display: block;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 3px;
+}
+#dotContainer {
+  display: block;
+  margin: 0 auto;
+  height: 21px;
+  width: 256px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
