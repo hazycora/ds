@@ -1,4 +1,7 @@
 # ds
 
 Simulate the DSi home screen!
-the 3ds folder is compatible with the 3ds browser. the pc folder is optimized for pc.
+
+[PC Optimized](http://ds.hazycora.com/pc/)
+
+[3DS Browser Optimized](http://ds.hazycora.com/3ds/)
